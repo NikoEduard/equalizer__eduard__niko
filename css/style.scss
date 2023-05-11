@@ -1,0 +1,509 @@
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:regular,700);
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+.box {
+    max-width: 1440px;
+    margin: 0 auto;
+    // min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/bg-main-desktop.png), url(../images/bg-pattern-1.svg);
+    background-position: left -316px top -271px, top 0 right 0;
+    background-repeat: no-repeat;
+    background-color: #F2F2F2;
+
+    font-family: 'IBM plex sans', sans-serif;
+    font-weight: 400;
+    color: #191826;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 62px;
+
+    &__inner {
+        margin-bottom: 321px;
+    }
+
+    &__inner-logo {
+        margin-bottom: 127px;
+    }
+
+    &__inner-title {
+        font-weight: 700;
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -1px;
+        margin-bottom: 40px;
+        max-width: 1015px;
+    }
+
+    &__inner-text {
+        font-size: 20px;
+        line-height: 34px;
+        max-width: 825px;
+    }
+}
+
+
+.main {
+    flex: 1 1 auto;
+    margin-bottom: 202px;
+
+    &__inner {
+        width: 100%;
+        height: 600px;
+        border-radius: 12px;
+        background-color: #191826;
+        background-image: url(../images/bg-pattern-2.svg);
+        background-repeat: no-repeat;
+        background-position: left 312px top -40px;
+        position: relative;
+    }
+
+    &__inner-pic {
+        position: absolute;
+        left: 102px;
+        top: -213px;
+
+        img {
+            max-width: 312px;
+        }
+    }
+
+    &__inner-card {
+
+        width: 446px;
+        height: 625px;
+        background-color: #FA7453;
+        border-radius: 12px;
+        padding: 58px 59px 48px 54px;
+        position: absolute;
+        right: 95px;
+        top: 90px;
+
+        .card {
+
+            &__title {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 52px;
+                color: #FCFAF9;
+                margin-bottom: 22px;
+            }
+
+            &__text {
+                font-size: 20px;
+                line-height: 34px;
+                color: #FCFAF9;
+                margin-bottom: 39px;
+            }
+
+            &__price {
+                display: flex;
+                align-items: center;
+                margin-bottom: 46px;
+
+                span:first-child {
+                    font-weight: 700;
+                    font-size: 65px;
+                    line-height: 52px;
+                    color: #FCFAF9;
+                    margin-right: 16px;
+                }
+
+                span:last-child {
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: -0.2px;
+                    color: #FCFAF9;
+                }
+            }
+
+            &__btn {
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                max-width: 100%;
+                // height: 61px;
+                border-radius: 12px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 32px;
+                letter-spacing: -0.18px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 61px;
+                    text-decoration: none;
+                }
+
+                span {
+                    display: inline-block;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.ios {
+    a {
+        color: #fff;
+    }
+
+    background-color: #191826;
+    margin-bottom: 16px;
+
+    span {
+        width: 17.08px;
+        background-image: url(../images/icon-apple.svg);
+        margin-right: 7.92px;
+    }
+
+    &:hover {
+        background-color: #66E2DC;
+    }
+}
+
+.android {
+    background-color: #FCFAF9;
+
+    a {
+        color: #191826;
+    }
+
+    span {
+        width: 16.7px;
+        background-image: url(../images/icon-android.svg);
+        margin-right: 7.8px;
+    }
+
+    &:hover {
+        background-color: #FFB964;
+    }
+}
+
+
+.footer {
+    padding-bottom: 91px;
+
+    &__inner {
+        display: flex;
+        // align-items: center;
+    }
+
+    &__inner-logo {
+        margin-right: 137.76px;
+    }
+
+    &__inner-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__inner-text {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 366px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__inner-socialm {
+        margin-left: auto;
+        width: 100px;
+        height: 79px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+
+
+@media (max-width: 1220px) {
+    .header {
+        &__inner {
+            max-width: 830px;
+        }
+
+        &__inner-title {
+            max-width: inherit;
+            font-size: 88px;
+            line-height: 88px;
+        }
+
+        &__inner-text {
+            max-width: inherit;
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    .header {
+        &__inner {
+            max-width: 600px;
+        }
+
+        &__inner-title {
+            font-size: 64px;
+            line-height: 64px;
+            max-width: inherit;
+        }
+
+        &__inner-text {
+            font-size: 18px;
+            line-height: 28px;
+            max-width: inherit;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .box {
+        max-width: 768px;
+        background-image: url(../images/bg-main-tablet.png), url(../images/bg-pattern-1.svg);
+        background-size: 983px auto, 266.67px auto;
+        background-position: top -160px left -260px, top -32px right -36px;
+    }
+
+    .container {
+        max-width: 688px;
+    }
+
+    .header {
+
+        &__inner {
+            margin-bottom: 249px;
+            max-width: 520px;
+        }
+
+        &__inner-logo {
+            margin-bottom: 95px;
+        }
+
+        &__inner-title {
+            letter-spacing: -0.73px;
+            margin-bottom: 28px;
+        }
+
+        &__inner-text {
+            padding-right: 6px;
+        }
+    }
+
+    .main {
+        margin-bottom: 183px;
+
+        &__inner {
+            background-size: 280px auto;
+            background-position: left 229px top -47px;
+        }
+
+        &__inner-pic {
+            left: 64px;
+            top: -138px;
+
+            img {
+                max-width: 270px;
+            }
+        }
+
+        &__inner-card {
+            width: 399px;
+            height: 546px;
+            padding: 45px 48px 51px;
+            right: 58px;
+            top: 150px;
+
+            .card {
+
+                &__title {
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-bottom: 12px;
+                }
+
+                &__text {
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 36px;
+                }
+
+                &__price {
+                    margin-bottom: 32px;
+                }
+
+            }
+        }
+    }
+
+    .footer {
+        padding-bottom: 85px;
+
+        &__inner {
+            display: block;
+        }
+
+        &__inner-logo {
+            margin: 0 0 32px 0;
+        }
+
+
+
+    }
+}
+
+@media (max-width:630px) {
+
+    .box {
+        max-width: 600px;
+        background-image: url(../images/bg-main-tablet.png);
+        background-size: 983px auto;
+        background-position: top -160px left -260px;
+    }
+
+    .container {
+        max-width: 552px;
+    }
+
+
+    .main {
+        margin-bottom: 183px;
+
+        &__inner {
+            background-size: 280px auto;
+            background-position: left 229px top -47px;
+        }
+
+        &__inner-pic {
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        &__inner-card {
+            right: 50%;
+            transform: translateX(50%);
+
+
+        }
+    }
+}
+
+
+
+
+
+@media(max-width: 450px) {
+    .box {
+        max-width: 375px;
+        background-image: url(../images/bg-main-mobile.png);
+        background-size: 480px auto;
+        background-position: top -164px right -180px;
+    }
+
+    .container {
+        max-width: 327px;
+    }
+
+    .header {
+        padding-top: 40px;
+
+        &__inner {
+            margin-bottom: 166px;
+            max-width: inherit;
+        }
+
+        &__inner-logo {
+            margin-bottom: 64px;
+        }
+
+        &__inner-title {
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -0.45px;
+            margin-bottom: 20px;
+            max-width: inherit;
+        }
+
+        &__inner-text {
+            font-size: 16px;
+            line-height: 26px;
+            max-width: inherit;
+            padding: 0;
+        }
+
+
+    }
+
+    .main {
+        .container {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        margin-bottom: 390px;
+
+        &__inner {
+            // width: 375px;
+            background-position: top center;
+        }
+
+        &__inner-pic {
+            top: -98px;
+
+            img {
+                max-width: 208px;
+            }
+        }
+
+        &__inner-card {
+            width: inherit;
+            padding: 48px 37px;
+            // right: 0;
+            top: 380px;
+        }
+    }
+
+    .footer {
+        padding-bottom: 50px;
+
+        &__inner-info {
+            display: block;
+        }
+
+        &__inner-text {
+            margin-bottom: 35px;
+        }
+
+        &__inner-socialm {
+            margin: 0;
+        }
+    }
+}
